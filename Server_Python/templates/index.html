@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Revistas en Línea</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+            background: white;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .header {
+            background: #333;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+        .header h1 a {
+            color: white;
+            text-decoration: none;
+            font-size: 24px;
+        }
+        .nav {
+            background: #444;
+            color: white;
+            padding: 15px 0;
+            text-align: center;
+        }
+        .nav a {
+            color: white;
+            margin: 0 10px;
+            text-decoration: none;
+            font-size: 18px;
+        }
+        .content {
+            margin-top: 20px;
+        }
+        .footer {
+            background: #333;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1><a href="{{ url_for('index') }}">Revistas en Línea</a></h1>
+        </div>
+        <div class="nav">
+            <a href="{{ url_for('Inicio') }}">Inicio</a>
+            <a href="{{ url_for('Notas') }}">TVyNovelas</a>
+            <a href="{{ url_for('Noticias') }}">Noticias</a>
+        </div>
+        <div class="content">
+            <h2>TVNotas</h2>
+            <p>Descripción e información relevante sobre TVNotas.</p>
+            
+            <h2>TVyNovelas</h2>
+            <p>Descripción e información relevante sobre TVyNovelas.</p>
+
+            <h2>Otras Noticias</h2>
+            <p>Información sobre otras revistas y publicaciones de noticias.</p>
+        </div>
+        <div class="footer">
+            <p>Derechos de autor © 2023 Revistas en Línea</p>
+        </div>
+    </div>
+</body>
+</html>
